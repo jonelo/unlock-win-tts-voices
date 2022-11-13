@@ -4,6 +4,11 @@ This batch script is for end users and unlocks the Microsoft Windows TTS voices 
 ## What does it?
 The batch prints a list of TTS voices that powershell can see. Then the batch asks the user whether the TTS voices should be unlocked. After the acutal action, the batch prints again a list of TTS voices powershell can see.
 
+### Running the script
+Open a PowerShell (using normal permissions), and change to the directory where you have stored the batch file. On my computer I have stored it to Applications\bin. Launch it simply by typing `.\unlock-win-tts-voices.bat`:
+
+<img width="80%" src="https://raw.githubusercontent.com/jonelo/unlock-win-tts-voices/main/docs/images/powershell_unlock-win-tts-voices.png" alt="unlock_win_tts-voices in action" style="vertical-align:top;margin:10px 10px" />
+
 ## Development details
 ### How the unlock works
 There is a small PowerShell script on the web (see credits) that simple copies a particular registry tree to another. Actally that action enables other applications to use the OS TTS voices.
